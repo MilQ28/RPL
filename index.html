@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <script src="https://cdn.tailwindcss.com">
+      function kirim() {
+        document.getElementById("form_kontak").reset();
+      }
+
+      function kirim() {
+        document.getElementById("nama").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("pesan").value = "";
+      }
+
+    </script>
+  </head>
+  <body class="bg-black font-mono">
+    <nav class="bg-zinc-600/70 fixed flex justify-between w-full backdrop-blur-sm mx-auto max-w-7xl container">
+      <h1 class="text-white/90 p-4 text-2xl font-bold">Logo</h1>
+      <div class="flex items-center px-4 gap-0 text-white ">
+        <a class="hover:text-indigo-300 hover:bg-sky-200/10 py-5 px-3 rounded-md transition" href="#upper">Upper</a>
+        <a class="hover:text-indigo-300 hover:bg-sky-200/10 py-5 px-4 rounded-md transition" href="#card">Card</a>
+        <a class="hover:text-indigo-300 hover:bg-sky-200/10 py-5 px-3 rounded-md transition" href="#third">Third</a>
+      </div>
+    </nav>
+    <main class="bg-gradient-to-b from-indigo-900/70 to-black bg-fixed">
+      <section id="upper" class="max-w-7xl mx-auto container pt-48 bg-[url('img/1472.jpg')] bg-cover bg-center h-screen bg-fixed">
+        <div class="container mx-auto px-9">
+          <h1 class="text-white text-center mx-auto text-3xl max-w-xs font-bold py-4 font-sans">Lorem, ipsum dolor sit amet
+            <span class="text-cyan-400">consectetur.</span>
+          </h1>
+          <p class="text-sky-100/80 max-w-xl text-center mx-auto text-xs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi
+            ducimus itaque cupiditate ut? Provident cum delectus veritatis dolorem
+            vitae omnis necessitatibus accusantium dolor.
+          </p>
+          <a
+            href=""
+            class="bg-blue-700 rounded-md mx-auto py-2 justify-center flex max-w-24 mt-4 text-xs text-white hover:bg-blue-900 transition"
+            >Masuk
+          </a>
+        </div>
+      </section>
+
+      <section id="card" class="container max-w-7xl pt-49 h-screen mx-auto">
+        <h1 class="text-white flex mx-auto justify-center pt-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+        <div class="grid-cols-3 mx-auto justify-center gap-16 flex text-center py-16 ">
+          <div class="bg-white w-64 rounded-md shadow-md shadow-slate-800 h-auto items-center">
+            <h1>HEHEH</h1>
+            <img src="img/852.jpg" alt="">
+            <h2>HOHOHO</h2>
+          </div>
+          <div class="bg-white w-64 rounded-md shadow-md shadow-slate-800 h-auto items-center">
+            <h1>HEHEH</h1>
+            <img src="img/852.jpg" alt="">
+            <h2>HOHOHO</h2>
+          </div>
+          <div class="bg-white w-64 rounded-md shadow-md shadow-slate-800 h-auto items-center">
+            <h1>HEHEH</h1>
+            <img src="img/852.jpg" alt="">
+            <h2>HOHOHO</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-500 min-h-screen flex items-center justify-center" id="third">
+        <form id="form_kontak" class="container flex text-center items-center justify-center min-h-screen flex-col space-y-4">
+          <h1>Hubungi Saya</h1>
+          <input type="text" name="" id="nama" placeholder="Nama" class="w-96 p-2 rounded-xl shadow-lg">
+          <input type="email" name="" id="email" placeholder="Email" class="w-96 p-2 rounded-xl shadow-lg">
+          <textarea name="" id="text" placeholder="Masukkan Text" class="w-96 p-2 rounded-xl shadow-lg"></textarea>
+          <button type="submit" onclick="kirim()" class="bg-blue-600 p-2 w-24 rounded-3xl border border-b-4 border-r-2 border-l-2 border-blue-900 shadow-xl active:bg-blue-800">Kirim</button>
+        </div>
+      </section>
+
+    </main>
+
+  </body>
+</html>
